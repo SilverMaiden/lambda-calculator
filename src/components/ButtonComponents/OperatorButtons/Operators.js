@@ -8,7 +8,7 @@ import OperatorButton from "./OperatorButton";
 
 import { operators } from "../../../data";
 
-const Operators = () => {
+const Operators = (props) => {
   // STEP 2 - add the imported data to state
 
   const [operatorState, setOperatorState] = useState(operators);
@@ -19,7 +19,7 @@ const Operators = () => {
        it any props needed by the child component*/}
     { operators.map(function(element) {
         let key1 = Object.keys(element)[0];
-        return <OperatorButton data={element[key1]} /> ;
+        return <OperatorButton value={element[key1]} setNumberState={props.setNumberState} numberState={props.numberState} /> ;
     })}
 
     </div>
