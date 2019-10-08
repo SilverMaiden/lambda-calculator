@@ -1,12 +1,6 @@
 import React from "react";
 
 const OperatorButton = (props) => {
-    var math_it_up = {
-        '+': function (x, y) { return x + y },
-        '-': function (x, y) { return x - y }
-        '*': function (x, y) { return x * y }
-        '/': function (x, y) { return x / y }
-    };
 
   return (
     <>
@@ -15,21 +9,30 @@ const OperatorButton = (props) => {
           console.log(props.value);
           if (props.value === '=') {
               console.log("TIME TO FIND THE SUM");
-              let myArr =props.numberState.split();
-              let temporaryTotal = 0;
+              let myArr = Array.from(props.numberState);
+              let temporaryTotal = "";
               let finalOutput = 0;
               myArr.forEach((element) => {
-                  if (isNaN(parseInt(element))) {
-                      //For multiplication and division
-                      finalOutput += temporaryTotal;
-                      temporaryTotal = 0;
+                  console.log(element);
+                  let strInt = parseInt(element);
+                  if (isNaN(strInt)) {
+                      let intTotal = parseInt(temporaryTotal);
+                      if (element === '+') {
+                          finalOutput += intTotal ;
+                          console.log(finalOutput);
+                      } else if (element === '-') {
+                          finalOutput -= intTotal;
+                      } else if (element === '*') {
+                          finalOutput = finalOutput * intTotal;
+                      } else if (element === '/') {
+                          finalOutput = finalOutput / intTotal;
+                      }
+                      temporaryTotal = "";
                   } else {
-                      //For addition and subtraction
-                      temporaryTotal +=
+                      temporaryTotal += element;
                   }
-
               })
-              console.log(myArr);
+              console.log(finalOutput);
           } else {
               props.setNumberState(props.numberState + props.value);
           }
