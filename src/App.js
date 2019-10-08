@@ -23,14 +23,25 @@ const [numberState, setNumberState] = useState(0);
   return (
     <div className="container">
       <Logo />
-      <div className="App buttons-container">
+      <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Display data={numberState}/>
-        <Specials numberState={numberState} setNumberState={setNumberState}/>
-        <Numbers numberState={numberState} setNumberState={setNumberState}/>
-        <Operators numberState={numberState} setNumberState={setNumberState}/>
+        <div className="">
+            <Display data={numberState}/>
+            <div className="button-container">
+
+                <div>
+                    <Specials numberState={numberState} setNumberState={setNumberState}/>
+                </div>
+                <div className="all-buttons">
+                    <Numbers numberState={numberState} setNumberState={setNumberState}/>
+                    <Operators numberState={numberState} setNumberState={setNumberState}/>
+                </div>
+
+
+            </div>
       </div>
     </div>
+</div>
   );
 }
 

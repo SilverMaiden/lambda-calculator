@@ -8,6 +8,10 @@ const SpecialButton = (props) => {
 
           if (props.value === 'C') {
               props.setNumberState(parseInt(props.numberState) - parseInt(props.numberState));
+          } else if(props.value ==='+/-') {
+              props.setNumberState(parseInt(props.numberState) - (2 * parseInt(props.numberState)));
+          } else if(props.value === '%') {
+              props.setNumberState(parseInt(props.numberState) * 0.01);
           }
 
 
