@@ -1,5 +1,6 @@
 import React, { useState }from "react";
 import "./App.css";
+import "./buttons.css";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Specials from "./components/ButtonComponents/SpecialButtons/Specials";

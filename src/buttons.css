@@ -1,4 +1,5 @@
 
+
 button {
     font-size:1rem;
     margin-left: 5%;
@@ -34,7 +35,7 @@ button {
 
 .specials-And-Numbers {
     width: 70%;
-    margin-left: 5%;
+    margin-left: 9%;
 
 }
 
@@ -48,7 +49,13 @@ button {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    width: 75%;
+    width: 79%;
+    margin-left: 3%;
+}
+
+.numbers button {
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 
@@ -69,7 +76,7 @@ button {
     width: 25%;
     padding-top: 0.5%;
     margin-right: 10%;
-    margin-left: -10%;
+    margin-left: -8%;
     height: 100%;
     
 }

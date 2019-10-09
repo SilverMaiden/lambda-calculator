@@ -1,5 +1,4 @@
 .container {
-    padding-left: 7.5%;
     background-color: #c00025;
     width: 100%;
     max-width: 550px;
@@ -10,7 +9,9 @@
     flex-flow: column wrap;
 }
 .display {
+    padding-right: 5%;
     margin-top: 25px;
+    margin-left: 5%;
     height: 100px;
     width: 450px;
     border-radius: 50px;
@@ -22,87 +23,4 @@
     align-items: flex-end;
     font-size: 5.0rem;
   }
-
-
-button {
-    font-size:1rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-	background-color:#073782;
-	border-radius:50%;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	padding:10px 15px;
-	text-decoration:none;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border-color: transparent;
-    box-shadow: 0px 4px 	#2D153D;
-
-}
-
-
-.button-container{
-    width: 50%;
-}
-.container-All-Buttons {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.specials-And-Numbers {
-    width: 70%;
-    margin-left: 5%;
-
-}
-
-.numbers-container {
-
-
-}
-
-/* for numbers buttons */
-.numbers {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 75%;
-}
-
-
-.special-container {
-    width: 100%;
-
-}
-
-.special-container button {
-    background-color:#0067A9;
-
-}
-
-.operators-container {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    width: 25%;
-    padding-top: 0.5%;
-    margin-right: 10%;
-    margin-left: -10%;
-    height: 100%;
-    
-}
-
-.operators-container button {
-    margin-top: 46%;
-    margin-bottom: 46%;
-    background-color:#05B3E1;
-
-}
 
